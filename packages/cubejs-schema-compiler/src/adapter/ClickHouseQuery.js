@@ -247,4 +247,8 @@ export class ClickHouseQuery extends BaseQuery {
     templates.quotes.escape = '\\`';
     return templates;
   }
+
+  get asSyntaxTable() {
+    return 'EMPTY AS';
+  }
 }
